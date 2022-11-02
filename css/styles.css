@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: lightsteelblue;
 }
 
 p {
@@ -37,3 +37,5 @@ img {
   float: right;
   margin-right: 15px;
 }
+
+.space { margin-top: 155px; }

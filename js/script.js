@@ -11,13 +11,21 @@
  */
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
-    scope: "/ICS2O-Template-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Unit3-03-JS/sw.js", {
+    scope: "/ICS2O-Unit3-03-JS/",
   })
 }
 
 // function description
 
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function submit() {
+  // input
+  const sphereRadius = parseFloat(document.getElementById("sphere-radius").value)
+
+  // process
+  const sphereVolume = (4 / 3) * (sphereRadius ** 3) * Math.PI
+
+  // output
+  document.getElementById("sphereVolume").innerHTML =
+    "Volume of the sphere is: " + sphereVolume.toFixed(2)
 }
