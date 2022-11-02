@@ -20,10 +20,12 @@ if (navigator.serviceWorker) {
 
 function submit() {
   // input
-  const sphereRadius = parseFloat(document.getElementById("sphere-radius").value)
+  const sphereRadius = parseFloat(
+    document.getElementById("sphere-radius").value
+  )
 
   // process
-  const sphereVolume = (4 / 3) * (sphereRadius ** 3) * Math.PI
+  const sphereVolume = (4 / 3) * sphereRadius ** 3 * Math.PI
 
   // output
   document.getElementById("sphereVolume").innerHTML =
