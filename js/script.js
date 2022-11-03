@@ -16,7 +16,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-// function description
+// calculate volume of sphere
 
 function submit() {
   // input
