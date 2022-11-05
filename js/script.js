@@ -29,5 +29,5 @@ function submit() {
 
   // output
   document.getElementById("sphereVolume").innerHTML =
-    "Volume of the sphere is: " + sphereVolume.toFixed(2) + "cm³"
+    "Volume of the sphere is: " + sphereVolume.toFixed(2) + " cm³"
 }
